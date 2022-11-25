@@ -17,12 +17,12 @@ export const Form = () => {
   }, [])
 
   useEffect(() => {
-    if(!street || !country){
+    if (!city || !country){
       tg.MainButton.hide()
     } else {
       tg.MainButton.show()
     }
-  }, [country, street])
+  }, [country, city])
 
   const onChangeCountry = (e) => {
     setCountry(e.target.value)
